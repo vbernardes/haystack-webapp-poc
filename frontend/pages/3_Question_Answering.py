@@ -15,8 +15,12 @@ if query:
     response = requests.post(haystack_query_url, json={'query': query})
     response_json = response.json()
 
+    score_threshold = st.slider('Choose the minimum answer score:',
+                                min_value=0.0,
+                                max_value=1.0,
+                                value=0.75)
+
     st.write('### Extracted answers')
-    score_threshold = .75
     valid_answers = []
     for answer in response_json.get('answers'):
         if answer.get('score') >= score_threshold:
