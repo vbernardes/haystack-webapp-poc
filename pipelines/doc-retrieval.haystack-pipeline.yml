@@ -1,4 +1,4 @@
-version: 1.13.2
+version: 1.12.1
 
 components:
   - name: DocumentStore
@@ -21,7 +21,7 @@ components:
       split_by: word
       split_length: 250
       split_overlap: 30 
-      split_respect_sentence_boundary: True 
+      split_respect_sentence_boundary: True
 
 pipelines:
   - name: indexing
@@ -36,7 +36,7 @@ pipelines:
         inputs: [Preprocessor]
       - name: DocumentStore
         inputs: [Retriever]
-  - name: query 
+  - name: query
     nodes:
       - name: Retriever
         inputs: [Query]

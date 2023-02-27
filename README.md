@@ -22,4 +22,4 @@ This section is not implemented yet.
 This section allows you to search for documents containing a specific keyword or phrase. To use it, type your query in the text input box and press Enter. The application will send a request to a Haystack server with the query and retrieve a list of relevant documents.
 
 ### Question Answering
-This section is not implemented yet.
+This section allows you to ask a question and receive an answer from the Haystack server. To use it, type your question in the text input box and press Enter. The application will send a request to a Haystack server with the question and retrieve the most relevant answers. The answers will be displayed along with their score and context.
