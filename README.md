@@ -23,3 +23,7 @@ This section allows you to search for documents containing a specific keyword or
 
 ### Question Answering
 This section allows you to ask a question and receive an answer from the Haystack server. To use it, type your question in the text input box and press Enter. The application will send a request to a Haystack server with the question and retrieve the most relevant answers. The answers will be displayed along with their score and context.
+
+## Improvements
+- [ ] Rewrite the REST API server, so we don't need to run one Haystack container per pipeline (e.g., one for document retrieval and another for question answering).
+- [ ] Deploy to cloud provider.
